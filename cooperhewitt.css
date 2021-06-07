@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Medium'),
+        url('fonts/CooperHewitt-Medium.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Bold'),
+        url('fonts/CooperHewitt-Bold.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Book';
+    src: local('CooperHewitt-BookItalic'),
+        url('fonts/CooperHewitt-BookItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-LightItalic'),
+        url('fonts/CooperHewitt-LightItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-HeavyItalic'),
+        url('fonts/CooperHewitt-HeavyItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Light'),
+        url('fonts/CooperHewitt-Light.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Heavy'),
+        url('fonts/CooperHewitt-Heavy.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt Book';
+    src: local('CooperHewitt-Book'),
+        url('fonts/CooperHewitt-Book.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-BoldItalic'),
+        url('fonts/CooperHewitt-BoldItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-MediumItalic'),
+        url('fonts/CooperHewitt-MediumItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-SemiboldItalic'),
+        url('fonts/CooperHewitt-SemiboldItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Semibold'),
+        url('fonts/CooperHewitt-Semibold.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-ThinItalic'),
+        url('fonts/CooperHewitt-ThinItalic.woff2') format('woff2'),
+        url('fonts/CooperHewitt-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: local('CooperHewitt-Thin'),
+        url('fonts/CooperHewitt-Thin.woff2') format('woff2'),
+        url('fonts/CooperHewitt-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
