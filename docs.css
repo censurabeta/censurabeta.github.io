@@ -1,0 +1,345 @@
+html, body {
+    inset: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Cooper Hewitt', sans-serif;
+    position: relative;
+}
+
+#top {
+    height: 0;
+    width: 0;
+}
+
+.back-button {
+    margin-left: 10px;
+}
+
+.back-button svg {
+    fill: #ffffff;
+    margin-top: 10px;
+}
+
+.back-button:hover svg {
+    fill: url(#censura-gradient)
+}
+
+.censura-c {
+    display: inline-block;
+
+    font-weight: 800;
+
+    background: #ff0000; 
+    background: -moz-linear-gradient(45deg,  #ff0000 15%, #ffbb02 100%); 
+    background: -webkit-linear-gradient(45deg,  #ff0000 15%,#ffbb02 100%); 
+    background: linear-gradient(45deg,  #ff0000 15%, #ffbb02 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ffbb02',GradientType=1 ); 
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.chapter {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100vh;
+    width: 75%;
+}
+
+.section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.section::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    color: #ff9800;
+}
+
+.introduction-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-header h1 {
+    margin-bottom: 0;
+}
+
+.censura-logo {
+    height: auto;
+    width: 25vh;
+}
+
+.toc-container {
+    width: 25%;
+    position: fixed;
+}
+
+.toc-container > ol {
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-left: 2em;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.toc-container li > ol > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ol ol {
+    padding-left: 10px;
+}
+
+.toc-section-list-item-selected {
+    color: #ff9800;
+}
+
+.mat-button, .mat-button:visited {
+    background-color: #ff9800;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+
+.mat-button:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.mat-button:active {
+    background-color: #ffa810;
+}
+
+.mat-button.discord-button {
+    background-color: #5865F2;
+    width: 240px;
+    margin: 30px 0;
+}
+
+.mat-button.discord-button:active {
+    background-color: #6a74eb;
+}
+
+.discord-mention {
+    color: #DEE0FC;
+    background-color: rgba(88, 101, 242, 0.3);
+    padding: 0 2px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.slash-command-container {
+    background-color: #292B2F;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.slash-command-icon {
+    background-image: url('censura.png');
+    background-size: contain;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.slash-command-content {
+    flex-grow: 1;
+}
+
+.slash-command-name {
+    font-weight: 700;
+}
+
+.slash-command-argument {
+    font-weight: 400;
+    background-color: #18191C;
+    border-radius: 4px;
+    padding: 0 4px;
+    margin-left: 6px;
+}
+
+.slash-command-argument.argument-selected {
+    background-color: #5865F2;
+}
+
+.slash-command-argument.argument-optional {
+    position: relative;
+    margin-left: 90px;
+}
+
+.slash-command-argument.argument-optional::before {
+    content: 'OPTIONAL';
+    font-size: 0.9em;
+    color: #72767d;
+    position: absolute;
+    right: 100%;
+    padding: 2px 7px 0 7px;
+    border-left: 1px solid #72767d;
+}
+
+.slash-command-description, .slash-command-application-name {
+    color: #b9bbbe;
+    font-size: small;
+}
+
+.embed-link-fake {
+    color: #00AFF4;
+}
+
+.embed-link-fake:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.embed-container {
+    background-color: #36393F;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 0.25em;
+}
+
+.embed-container code {
+    font-size: 1.25em;
+    padding: 0.2em;
+    background-color: #202225;
+    border-radius: 2px;
+}
+
+.embed-content-container {
+    background-color: #2F3136;
+    border-left: 4px solid #ff9800;
+    border-radius: 5px;
+}
+
+.embed-card {
+    padding: 0.5em 1em 1em 0.75em;
+}
+
+.embed-card > * {
+    margin-top: 8px;
+}
+
+.embed-author {
+    display: flex;
+    align-items: center;
+    font-size: 0.875em;
+}
+
+.embed-author-avatar {
+    background-image: url('censura.png');
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.embed-title {
+    font-weight: 700;
+}
+
+.embed-field {
+    font-size: 0.875em;
+}
+
+.embed-field::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 1em;
+    line-height: 1.125em;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.embed-inline-field-container {
+    display: flex;
+}
+
+.embed-inline-field-container > .embed-field {
+    padding-right: 12px;
+}
+
+.embed-footer {
+    font-size: 0.75em;
+}
+
+.embed-footer:not([data-date=""])::after {
+    content: ' • ' attr(data-date);
+}
+
+.embed-component-container {
+    display: flex;
+    align-items: center;
+}
+
+.embed-component {
+    margin: 4px 8px 4px 0;
+    padding: 2px 16px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.embed-component-style-secondary, .embed-component-style-link {
+    background-color: #4F545C;
+}
+
+.launchIcon {
+    margin-left: 8px;
+}
+
+.slash-command-options-container {
+    background-color: #2F3136;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.slash-command-options-container::before {
+    content: 'OPTIONS';
+    display: block;
+    color: #b9bbbe;
+    font-size: small;
+    margin: 8px 0;
+}
+
+.slash-command-option {
+    margin-bottom: 8px;
+}

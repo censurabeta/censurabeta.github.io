@@ -183,6 +183,11 @@ html, body {
     align-items: center;
 }
 
+.link-buttons-container {
+    display: flex;
+    margin-top: 30px;
+}
+
 .mat-button, .mat-button:visited {
     background-color: #ff9800;
     color: #ffffff;
@@ -208,7 +213,7 @@ html, body {
 .mat-button.discord-button {
     background-color: #5865F2;
     width: 240px;
-    margin-top: 30px;
+    margin-right: 30px;
 }
 
 .mat-button.discord-button:active {

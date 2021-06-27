@@ -1,6 +1,9 @@
 let its, cardBeginFadeinTs;
 const etop = document.getElementById('top');
 const promoContainer = document.getElementById('promo-container');
+
+promoContainer.style.opacity = "0";
+
 const bypassCards = [
     document.getElementById('bypass-card-1'),
     document.getElementById('bypass-card-2'),
